@@ -1201,6 +1201,16 @@ footer {
         width: 95vw;
         max-width: 1000px;
     }
+
+    /* Make rock candies less dominant on tablet */
+    #rock-blue-left,
+    #rock-pink-left {
+        width: 22vw;
+        max-width: 380px;
+        left: -2%;
+        top: 56%;
+        transform: rotate(12deg);
+    }
 }
 
 /* Phone / small tablet */
@@ -1256,6 +1266,16 @@ footer {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    /* Phone: scale down rock candies and nudge them in so they don't overflow */
+    #rock-blue-left,
+    #rock-pink-left {
+        width: 30vw;
+        max-width: 240px;
+        left: -4%;
+        top: 62%;
+        transform: rotate(10deg);
+    }
 }
 
 /* Small phones */
@@ -1297,5 +1317,41 @@ footer {
     header {
         position: fixed;
         padding: var(--space-3) var(--space-4);
+    }
+
+    /* Small phones: ensure rock candies are compact and don't cause horizontal scroll */
+    #rock-blue-left,
+    #rock-pink-left {
+        width: 36vw;
+        max-width: 140px;
+        left: -3%;
+        top: 64%;
+        transform: rotate(8deg);
+    }
+}
+
+/* Very small phones (narrow devices) - further reduce/hide rock candies to avoid overflow */
+@media (max-width: 420px) {
+    /* Hide the pink rock (secondary) to reduce clutter */
+    #rock-pink-left {
+        display: none;
+    }
+
+    /* Keep one rock but make it compact and move it slightly higher */
+    #rock-blue-left {
+        width: 40vw;
+        max-width: 120px;
+        left: -2%;
+        top: 62%;
+        transform: rotate(6deg);
+    }
+}
+
+/* Extra-narrow phones (older devices / very small viewports) */
+@media (max-width: 360px) {
+    /* Hide both if space is extremely constrained */
+    #rock-pink-left,
+    #rock-blue-left {
+        display: none;
     }
 }
