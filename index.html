@@ -494,7 +494,15 @@
                                     y: -200, // Move up
                                     x: (i) => (i % 2 === 0 ? -300 : 300), // Move outward significantly
                                     scale: 3, // ZOOM effect (Flying at you)
-                                    rotation: (i) => Math.random() * 360 - 180,
+                                    rotation: (i, target) => {
+                                        const uprightIds = ["gummy-orange-left", "gummy-green-left", "gummy-orange-right"];
+                                        // IF it's one of the big bears: Spin 360 degrees to land upright
+                                        if (uprightIds.includes(target.id)) {
+                                            return (i % 2 === 0 ? 360 : -360);
+                                        }
+                                        // ELSE: Rotate randomly like before
+                                        return Math.random() * 360 - 180;
+                                    },
                                     duration: 2,
                                     stagger: 0.1,
                                     ease: "power2.out"
