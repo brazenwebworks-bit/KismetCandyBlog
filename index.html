@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kismet Candy Store | Luxury Candy Blog</title>
+    <meta name="description"
+        content="Explore the fascinating world of candy with Kismet Candy Store. Discover the history, science, and trends behind your favorite sweets, from chocolate origins to freeze-dried innovations.">
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kismet Candy Store | Luxury Candy Blog">
+    <meta property="og:description"
+        content="Explore the fascinating world of candy with stories about history, science, flavors, and trends.">
+    <meta property="og:image" content="assets/images/Photos/Screenshot 2024-10-16 105323.png">
+
+    <link rel="icon" type="image/png" href="assets/images/Photos/Screenshot 2024-10-16 105323.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Syne:wght@400;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+
+<body>
+    <div class="global-blob blob-3"></div>
+    <div class="global-blob blob-4"></div>
+    <div class="global-blob blob-5"></div>
+
+
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <a href="index.html" class="logo">
+                    <span class="kismet-logo-text">Kismet Candy Store</span>
+                </a>
+            </a>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search stories...">
+                <div class="search-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+                <div class="search-dropdown" id="searchDropdown"></div>
+            </div>
+
+            <nav>
+                <a href="https://sweetlykismet.com" class="shop-btn" target="_blank">Shop</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero panel">
+            <div class="hero-bg">
+                <div class="hero-blob blob-1"></div>
+                <div class="hero-blob blob-2"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-image-container" style="position: relative; display: inline-block;">
+                    <p class="hero-subtitle">Est. 2020</p>
+                    <h1 class="kismet-header" style="position: relative; z-index: 10;">Kismet <span>Candy Store</span>
+                    </h1>
+                    <p class="hero-subtitle">The Ultimate Candy Experience</p>
+
+                </div>
+            </div>
+
+            <!-- Particles moved to Hero Root for edge positioning -->
+            <!-- Reference Layout Candy Placeholders -->
+            <!-- Left Side -->
+            <img src="assets/images/Main Page Candy/Candy2.png.png" id="gummy-orange-left" class="candy-ref-item"
+                alt="Orange Gummy Bear">
+            <img src="assets/images/Main Page Candy/Candy6.png.png" id="gummy-green-left" class="candy-ref-item"
+                alt="Green Gummy Bear">
+            <img src="assets/images/Main Page Candy/Candy1.png.png" id="chocolate-left-mid" class="candy-ref-item"
+                alt="Chocolate Piece">
+            <img src="assets/images/Main Page Candy/Gemini_Generated_Image_rl5j4jrl5j4jrl5j-removebg-preview.png"
+                id="gummy-white-left" class="candy-ref-item" alt="White Gummy Bear">
+            <img src="assets/images/Main Page Candy/Candy8.png.png" id="rock-blue-left" class="candy-ref-item"
+                alt="Blue Rock Candy">
+            <img src="assets/images/Main Page Candy/Candy9.png.png" id="rock-pink-left" class="candy-ref-item"
+                alt="Pink Rock Candy">
+            <img src="assets/images/Main Page Candy/Candy1.png.png" id="chocolate-left-bottom" class="candy-ref-item"
+                alt="Chocolate Piece Bottom">
+            <img src="assets/images/Main Page Candy/Candy7.png.png" id="chocolate-left-lower" class="candy-ref-item"
+                alt="Extra Chocolate Piece Left">
+
+            <!-- Right Side -->
+            <img src="assets/images/Main Page Candy/Candy2.png.png" id="gummy-orange-right" class="candy-ref-item"
+                alt="Orange Gummy Bear Right">
+            <img src="assets/images/Main Page Candy/Gemini_Generated_Image_5o4qz45o4qz45o4q-removebg-preview.png"
+                id="gummy-red-right" class="candy-ref-item" alt="Red Gummy Bear Right">
+            <img src="assets/images/Main Page Candy/Candy7.png.png" id="chocolate-right-mid" class="candy-ref-item"
+                alt="Chocolate Piece">
+            <img src="assets/images/Main Page Candy/Gemini_Generated_Image_k931eqk931eqk931-removebg-preview.png"
+                id="lollipop-right" class="candy-ref-item" alt="Lollipop">
+            <img src="assets/images/Main Page Candy/Candy7.png.png" id="chocolate-right-bottom" class="candy-ref-item"
+                alt="Chocolate Piece Bottom">
+
+            <!-- Background Scatter (Safe Zones) -->
+            <img src="assets/images/Main Page Candy/Candy5.png.png" id="bg-gummy-left-mid" class="candy-bg-item"
+                alt="Background Gummy Left Mid">
+            <img src="assets/images/Main Page Candy/Candy4.png.png" id="bg-gummy-left-bottom" class="candy-bg-item"
+                alt="Background Gummy Left Bottom">
+            <img src="assets/images/Main Page Candy/Candy2.png.png" id="bg-gummy-right-mid" class="candy-bg-item"
+                alt="Background Gummy Right Mid">
+            <img src="assets/images/Main Page Candy/Candy5.png.png" id="bg-gummy-right-bottom" class="candy-bg-item"
+                alt="Background Gummy Right Bottom">
+        </section>
+        <!-- Jar moved to Hero Root for absolute bottom grounding -->
+
+        </section>
+        </section>
+
+        <!-- Category Filter Bar -->
+        <div class="filter-bar-sticky">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="*">All</button>
+                <button class="filter-btn" data-filter=".history">History</button>
+                <button class="filter-btn" data-filter=".science">Science</button>
+                <button class="filter-btn" data-filter=".trends">Trends</button>
+                <button class="filter-btn" data-filter=".flavor">Flavor</button>
+            </div>
+        </div>
+
+        <section class="blog-section panel">
+            <h2 class="grid-headline">Latest <span style="color: var(--accent-pink)">Stories</span></h2>
+
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card history" onclick="window.location.href='pages/blog-template.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/7f7cdbc33ec612d432e5b7d3ac4f6d25.jpg" alt="Nerds Candy"
+                            class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">History</span>
+                        <h3 class="card-title">The History of Nerds</h3>
+                        <p class="card-excerpt">Discover how two distinct flavors came together to create the iconic
+                            candy that revolutionized the industry.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card science" onclick="window.location.href='pages/blue-raspberry.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/360_F_1831273889_kY2aHY6748mrKIKhf58QwO5XP07TsR5k.jpg"
+                            alt="Blue Raspberry" class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Science</span>
+                        <h3 class="card-title">Blue Raspberry's Secret</h3>
+                        <p class="card-excerpt">The fascinating story behind the electric blue flavor that defines
+                            childhood summers and why it isn't real.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card history" onclick="window.location.href='pages/cotton-candy.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/cotton-candy-free-photo - Copy.webp" alt="Cotton Candy"
+                            class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">History</span>
+                        <h3 class="card-title">The Sweet Irony</h3>
+                        <p class="card-excerpt">Why a dentist invented cotton candy: the true story behind the
+                            cavity-inducing cloud.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card science" onclick="window.location.href='pages/sour-science.html'">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600359756098-8bc52195bbf4?q=80&w=1888&auto=format&fit=crop"
+                            alt="Sour Candy" class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Science</span>
+                        <h3 class="card-title">Sour Science</h3>
+                        <p class="card-excerpt">Exploring the psychological and physiological reasons behind our craving
+                            for sour candies.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card trends" onclick="window.location.href='pages/freeze-dried.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/freezedriedNerdsbites - Copy.webp" alt="Freeze Dried Candy"
+                            class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Trends</span>
+                        <h3 class="card-title">The Freeze-Dried Revolution</h3>
+                        <p class="card-excerpt">From Skittles to taffy, why everything is getting the astronaut
+                            treatment. Crunch time.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card trends" onclick="window.location.href='pages/global-gummies.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/61J9F14PsCL._AC_UF894,1000_QL80_.jpg" alt="Global Gummies"
+                            class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Trends</span>
+                        <h3 class="card-title">Global Gummies</h3>
+                        <p class="card-excerpt">Peelable fruits and liquid centers: how texture is becoming the new
+                            flavor frontier.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 7 -->
+                <article class="blog-card flavor" onclick="window.location.href='pages/matcha-madness.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/Navitas_Blog_Matcha_Uses_WEB3_ea4adadb-c844-4f53-baa9-2300a652586c.webp"
+                            alt="Matcha Sweets" class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Flavor</span>
+                        <h3 class="card-title">Matcha Madness</h3>
+                        <p class="card-excerpt">The grassy, earthy tea that conquered the dessert world. Green is the
+                            new gold.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 8 -->
+                <article class="blog-card flavor" onclick="window.location.href='pages/salt-and-sweet.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/ZERSQAMFWZD7AH6YRWT4MOEW.webp" alt="Salted Caramel"
+                            class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Flavor</span>
+                        <h3 class="card-title">Salt & Sweet</h3>
+                        <p class="card-excerpt">Biology explains why we can't stop eating salted caramel. The perfect
+                            marriage.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 9 -->
+                <article class="blog-card science" onclick="window.location.href='pages/tempering-chocolate.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/Food+packshot+photography+chocolate+bars.webp"
+                            alt="Tempering Chocolate" class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Science</span>
+                        <h3 class="card-title">Tempering Chocolate</h3>
+                        <p class="card-excerpt">The molecular engineering behind the perfect snap. Avoiding the dreaded
+                            bloom.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 10 -->
+                <article class="blog-card history" onclick="window.location.href='pages/chocolate-history.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/Chocolate History.png" alt="Origins of Chocolate"
+                            class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">History</span>
+                        <h3 class="card-title">The Origins of Chocolate</h3>
+                        <p class="card-excerpt">From sacred Mesoamerican beverage to European luxury. The journey of the
+                            cacao bean through time.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 11 -->
+                <article class="blog-card science" onclick="window.location.href='pages/mint-science.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/mint-candies-in-bowl-menthol-bonbons-and-mint-lea-2023-11-27-19-32-54-utc_1100x.webp"
+                            alt="Mint Science" class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Science</span>
+                        <h3 class="card-title">Why Mint Tastes Cold</h3>
+                        <p class="card-excerpt">A chemical illusion. How menthol hacks your biology to make room
+                            temperature feel freezing.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 12 -->
+                <article class="blog-card trends" onclick="window.location.href='pages/spicy-sweets.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/Gemini_Generated_Image_rjwixerjwixerjwi.png" alt="Spicy Sweets"
+                            class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Trends</span>
+                        <h3 class="card-title">Spicy Sweets</h3>
+                        <p class="card-excerpt">The heat wave is here. From "swicy" chocolates to chili gummies, why we
+                            love the burn.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 13 -->
+                <article class="blog-card flavor" onclick="window.location.href='pages/vanilla-flavor.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/Grade-A-vs-Grade-B-Beans.jpg" alt="Vanilla Flavor"
+                            class="card-image" width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Flavor</span>
+                        <h3 class="card-title">Vanilla: More Than Plain</h3>
+                        <p class="card-excerpt">The orchid's secret. Why this complex, exotic flavor is anything but
+                            boring.</p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 14 -->
+                <article class="blog-card history" onclick="window.location.href='pages/candy-cane.html'">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/Photos/Candy cane imaage.png" alt="Candy Cane Story" class="card-image"
+                            width="400" height="300" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">History</span>
+                        <h3 class="card-title">The Candy Cane Story</h3>
+                        <p class="card-excerpt">From a quiet tool for choirmasters to a holiday icon. The hooked history
+                            of the peppermint stick.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Sweetly Kismet. All rights reserved.</p>
+    </footer>
+
+    <!-- GSAP / ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        (function () {
+            // Helper to load scripts dynamically
+            function loadScript(src) {
+                return new Promise((resolve, reject) => {
+                    const s = document.createElement("script");
+                    s.src = src;
+                    s.async = true;
+                    s.onload = resolve;
+                    s.onerror = () => reject(new Error("Failed to load: " + src));
+                    document.head.appendChild(s);
+                });
+            }
+
+            function safeText(el, txt) {
+                if (el) el.textContent = txt;
+            }
+
+            async function boot() {
+                try {
+                    // Load GSAP if not already present
+                    if (typeof gsap === 'undefined') {
+                        await loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js");
+                        await loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js");
+                    }
+
+                    window.addEventListener("load", () => {
+                        gsap.registerPlugin(ScrollTrigger);
+
+                        const panels = gsap.utils.toArray(".panel");
+                        const activeLabel = document.getElementById("activeLabel");
+                        const progressBar = document.getElementById("progressBar");
+
+                        // Prevent FOUC for Hero Image
+                        gsap.set(".hero-image", { visibility: "visible" });
+
+                        if (!panels.length) return;
+
+                        // UI Helpers (Progress Bar)
+                        ScrollTrigger.create({
+                            trigger: document.body,
+                            start: "top top",
+                            end: "bottom bottom",
+                            onUpdate: (self) => {
+                                if (progressBar) progressBar.style.width = `${Math.round(self.progress * 100)}%`;
+                            },
+                        });
+
+                        function setActive(i) {
+                            // Optional: Update a label if it exists
+                            if (activeLabel) {
+                                const label = panels[i]?.dataset?.label || "Section";
+                                safeText(activeLabel, label);
+                            }
+                        }
+
+                        // --- MAIN LOOP ---
+                        panels.forEach((panel, i) => {
+                            const isFirst = i === 0;
+                            const isLast = i === panels.length - 1;
+
+                            // 1. GENERIC MICRO ANIMATIONS (Preserved from your code)
+                            // Blob Parallax
+                            const blobs = panel.querySelectorAll(".blob");
+                            if (blobs.length) {
+                                gsap.to(blobs, {
+                                    yPercent: () => gsap.utils.random(-12, 12),
+                                    xPercent: () => gsap.utils.random(-10, 10),
+                                    ease: "none",
+                                    scrollTrigger: { trigger: panel, start: "top bottom", end: "bottom top", scrub: true },
+                                });
+                            }
+
+                            // 2. SCROLL LOGIC
+
+                            if (isFirst) {
+                                // === HERO LOCK (Panel 1) + CANDY ANIMATIONS ===
+                                // We use a Timeline here to combine the Pinning with the specific Candy Animations
+                                const tl = gsap.timeline({
+                                    scrollTrigger: {
+                                        trigger: panel,
+                                        start: "top top",
+                                        end: "+=200%", // Extended buffer for the animation to play out
+                                        pin: true,
+                                        pinSpacing: true,
+                                        scrub: 1.5,
+                                        onEnter: () => setActive(i),
+                                        onEnterBack: () => setActive(i),
+                                        onUpdate: (self) => {
+                                            // Optional fade of shell if it exists
+                                            const shell = panel.querySelector('.panel-shell');
+                                            if (shell) {
+                                                gsap.to(shell, {
+                                                    opacity: 1 - (self.progress * 0.5),
+                                                    overwrite: true
+                                                });
+                                            }
+                                        }
+                                    }
+                                });
+
+                                // --- MERGED CANDY ANIMATIONS ---
+                                // Jar animation disabled as it moved to footer
+                                /*
+                                tl.to(".hero-image", { 
+                                    autoAlpha: 1, 
+                                    scale: 1.5, 
+                                    rotation: 20, 
+                                    y: -50, 
+                                    duration: 3 
+                                })
+                                */
+                                // --- REFERENCE CANDY ANIMATIONS ---
+
+                                // 1. Excluded Items (Rock Candy) - Gentle Float
+                                tl.to("#rock-blue-left, #rock-pink-left", {
+                                    y: -50,
+                                    rotation: 10,
+                                    duration: 2,
+                                    ease: "power1.out"
+                                }, 0);
+
+                                // 2. Lollipop - Drops DOWN and Rotates CCW
+                                tl.to("#lollipop-right", {
+                                    y: "160vh", // Dropping further down to visually center
+                                    rotation: -135, // Rotate Counter-Clockwise
+                                    duration: 2.5,
+                                    ease: "power1.out"
+                                }, 0);
+
+                                // 2. Flying Items (Gummies, Chocolate, Sprinkles) - Fly Out at Viewer
+                                // We filter for the class but exclude the IDs handled above
+                                const flyingItems = gsap.utils.toArray(".candy-ref-item").filter(el =>
+                                    !["rock-blue-left", "rock-pink-left", "lollipop-right"].includes(el.id)
+                                );
+
+                                tl.to(flyingItems, {
+                                    y: -200, // Move up
+                                    x: (i) => (i % 2 === 0 ? -300 : 300), // Move outward significantly
+                                    scale: 3, // ZOOM effect (Flying at you)
+                                    rotation: (i) => Math.random() * 360 - 180,
+                                    duration: 2,
+                                    stagger: 0.1,
+                                    ease: "power2.out"
+                                }, 0);
+                            }
+                            else if (!isLast) {
+                                // === STACKING BEHAVIOR (Middle Panels) ===
+                                const tl = gsap.timeline({
+                                    scrollTrigger: {
+                                        trigger: panel,
+                                        start: "top top",
+                                        end: "bottom top",
+                                        pin: true,
+                                        pinSpacing: false, // Allows stacking
+                                        scrub: true,
+                                        invalidateOnRefresh: true,
+                                        onEnter: () => setActive(i),
+                                        onEnterBack: () => setActive(i),
+                                    }
+                                });
+
+                                // Stacking Animation (Fade/Scale out)
+                                tl.to(panel, {
+                                    scale: 0.92,
+                                    opacity: 0.88,
+                                    duration: 0.6,
+                                    ease: "none"
+                                })
+                                    .to(panel, {
+                                        scale: 0.82,
+                                        opacity: 0.55,
+                                        duration: 0.6,
+                                        ease: "none"
+                                    });
+                            }
+                            else {
+                                // === LAST PANEL ===
+                                ScrollTrigger.create({
+                                    trigger: panel,
+                                    start: "top 60%",
+                                    onEnter: () => setActive(i),
+                                    onEnterBack: () => setActive(i),
+                                });
+                            }
+                        });
+
+                        ScrollTrigger.refresh();
+                    });
+                } catch (err) {
+                    console.error(err);
+                }
+            }
+
+            boot();
+        })();
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="assets/js/search-data.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
