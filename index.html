@@ -496,12 +496,20 @@
                                     scale: 3, // ZOOM effect (Flying at you)
                                     rotation: (i, target) => {
                                         const uprightIds = ["gummy-orange-left", "gummy-green-left", "gummy-orange-right"];
-                                        // IF it's one of the big bears: Spin 360 degrees to land upright
+                                        // Compute rotation value first for logging/inspection
+                                        let rot;
                                         if (uprightIds.includes(target.id)) {
-                                            return (i % 2 === 0 ? 360 : -360);
+                                            rot = (i % 2 === 0 ? 360 : -360);
+                                        } else {
+                                            rot = Math.random() * 360 - 180;
                                         }
-                                        // ELSE: Rotate randomly like before
-                                        return Math.random() * 360 - 180;
+                                        // Debug: log index, id and chosen rotation so we can verify behavior in the console
+                                        try {
+                                            console.log("rotation-debug:", { index: i, id: target.id, rotation: rot });
+                                        } catch (e) {
+                                            // no-op if console isn't available
+                                        }
+                                        return rot;
                                     },
                                     duration: 2,
                                     stagger: 0.1,

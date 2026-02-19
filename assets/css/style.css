@@ -1162,3 +1162,140 @@ footer {
         bottom: -300px;
     }
 }
+
+/* -----------------------
+   Responsive Adjustments
+   Mobile-first tweaks for candy placement, sizes and header
+   ----------------------- */
+
+/* Tablet and small laptop */
+@media (max-width: 1024px) {
+    .candy-ref-item {
+        width: 8vw;
+        max-width: 140px;
+    }
+
+    /* Scale down very large background/foreground gummies */
+    #gummy-green-left {
+        width: 20vw;
+        max-width: 320px;
+        left: 2%;
+        top: 22%;
+    }
+
+    #gummy-orange-right {
+        width: 18vw;
+        max-width: 300px;
+        right: 2%;
+        top: 22%;
+    }
+
+    #gummy-orange-left {
+        width: 9vw;
+        max-width: 160px;
+        left: 6%;
+        top: 22%;
+    }
+
+    .footer-jar {
+        width: 95vw;
+        max-width: 1000px;
+    }
+}
+
+/* Phone / small tablet */
+@media (max-width: 768px) {
+    header {
+        padding: var(--space-4);
+    }
+
+    .nav-container {
+        padding: var(--space-3);
+    }
+
+    .hero-content {
+        padding: var(--space-8) var(--space-4);
+        text-align: center;
+    }
+
+    .hero-image-container {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .candy-ref-item {
+        width: 14vw;
+        max-width: 130px;
+    }
+
+    /* Reduce visual clutter on small screens */
+    #bg-gummy-left-mid,
+    #bg-gummy-right-mid,
+    #bg-gummy-left-bottom,
+    #bg-gummy-right-bottom {
+        display: none;
+    }
+
+    /* Ensure large right gummy fits on screen */
+    #gummy-orange-right {
+        width: 22vw;
+        max-width: 260px;
+        right: 0;
+        top: 20%;
+    }
+
+    #gummy-green-left {
+        width: 18vw;
+        max-width: 240px;
+        left: 0;
+        top: 20%;
+    }
+
+    .footer-jar {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+
+    .candy-ref-item {
+        width: 20vw;
+        max-width: 100px;
+    }
+
+    #gummy-green-left {
+        width: 22vw;
+        max-width: 120px;
+        left: 2%;
+        top: 18%;
+    }
+
+    #gummy-orange-right {
+        width: 22vw;
+        max-width: 120px;
+        right: 2%;
+        top: 18%;
+        transform: rotate(10deg);
+    }
+
+    #gummy-orange-left {
+        left: 4%;
+        top: 18%;
+    }
+
+    .shop-btn {
+        padding: var(--space-2) var(--space-4);
+        font-size: 0.85rem;
+    }
+
+    header {
+        position: fixed;
+        padding: var(--space-3) var(--space-4);
+    }
+}
